@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Matter";
+}
+*::selection {
+    background-color: #000;
+    color: #fff;
+}
+html,body {
+    height:100%;
+    width:100%;
+}
+
+#main {
+    width: 100%;
+}
+
+#home {
+    width: 100%;
+    min-height: 100vh;
+}
+
+#nav {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav .logo img {
+    width: 100px;
+}
+#nav .right {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+#nav .right a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.4vw;
+    font-weight: 400;
+    letter-spacing: -1;
+}
+#nav .right i {
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+#home #homemain {
+    width: 100%;
+    padding: 12% 14%;  /*top-down  left-right  */
+}
+#homemain h1 {
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+#homemain .headings {
+    display: flex;
+    font-size: 3.5vw;
+    gap: 25px;
+}
+#homemain .headings h1 {
+    color: transparent;
+    -webkit-text-stroke: 0.01px #000000cd;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+#homemain .headings h1:hover {
+    color: #000;
+    cursor:default;
+}
+
+#homelast {
+    width: 75%;
+    padding: 6.3% 14%; /*top-down  left-right  */
+}
+#homelast p {
+    font-size: 1.6vw;
+    letter-spacing: -0.1px;
+    font-weight: 500;
+}
+
+#featured {
+    padding: 6% 14%; /*top-down  left-right  */
+
+}
+.fheading h1 {
+    font-size: 5.3vw;
+    letter-spacing: -.9px;
+    line-height: 1;
+    font-weight: 900;
+}
+.fheading h1:nth-child(2) {
+    -webkit-text-stroke: 0.01px #000;
+    color:transparent;
+}
+
+#fimages {
+    margin: 4vw 0 2vw 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+#fleft {
+    overflow: hidden;
+    width: 45%;
+    height: inherit;
+    /* border: 2px solid greenyellow; */
+}
+.fleftelem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: inherit;
+}
+.fleftelem h1 {
+    font-size: 2.3vw;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 1.5vw 0;
+}
+.fleftelem h3 {
+    font-size: 1.7vw;
+    font-weight: 400;
+}
+.fleftelem h4 {
+    opacity: 0.5;
+}
+
+#fright {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 45%;
+    height: inherit;
+}
+.image {
+    width: 95%;
+    height: 90%;
+    /* background-color: greenyellow; */
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    object-fit: cover;
+    position: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn button {
+    padding: 1vw 2vw;
+    font-size: 1.2vw;
+    border-radius: 100px;
+    border: 1px solid #d7d5d5;
+    background-color: #fff;
+    font-weight: 500;
+    letter-spacing: -.1px;
+}
+
+#dev {
+    width: 100%;
+    padding: 4% 14%; /*top-down  left-right  */
+}
+#dev h1 {
+    width: 60%;
+    font-size: 4vw;
+    font-weight: 300;
+    line-height: 1;
+}
+#dev p {
+    width: 68%;;
+    font-size: 1.7vw;
+    margin-top: 4vw;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+#slides {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    padding: 3% 7%; /*top-down  left-right  */;
+}
+#slides .slide {
+    display: flex;
+    flex-direction: column;
+}
+#slides .slide .img {
+    height: 16vw;
+    width: 26vw;
+}
+#slides .slide .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    object-fit: cover;
+}
+#slides .slide .tag {
+    width: fit-content;
+    margin: 7% 0;
+    padding: .5vw 1vw;
+    /* border: 1px solid #ebe9e9; */
+    background-color: #f7f6f6;
+    border-radius: 40px;
+}
+#slides .slide h3 {
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+#new {
+    width: 100%;
+    padding: 4% 14%; /*top-down  left-right  */
+}
+#new h1 {
+    width: 40%;
+    font-size: 4.5vw;
+    font-weight: 300;
+    line-height: -1;
+}
+#newslides {
+    width: 100%;
+    padding: 6% 0; /* top-down  left-right  */
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+#newslides .newslide {
+    display: flex;
+    flex-direction: column;
+}
+.newslide:hover {
+    transform: scale(1.23);
+    transition: 0.3s ease-in-out;
+    border: 1px solid #d7d5d5;
+    box-shadow: 0 0 10px 
+}
+
+.newslide .image {
+    height: 17.5vw;
+    width: 20vw;
+    /* background-color: aquamarine; */
+}
+.newslide .image img {
+    height: 17.5vw;
+    width: 20vw;
+    border-radius: 2px;
+    object-fit: cover;
+    position: center;
+}
+
+.newslide .tag {
+    width: fit-content;
+    margin: 7% 0;
+    margin-left: 8px;
+    padding: .5vw 1vw;
+    /* border: 1px solid #ebe9e9; */
+    background-color: #f7f6f6;
+    border-radius: 40px;
+}
+.newslide p {
+    width: 20vw;
+    padding: 10px;
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+/* -------------------FOOTER------------------- */
+
+#upperf {
+    width: 100%;
+    height: 20vw;
+    padding:4% 6%;
+    background-color: #000;
+    color: #fff;
+}
+#container {
+    width: 90%;
+    margin-right: 50%;
+    display: flex;
+    text-align: center;
+}
+#upperf .info {
+    width: 100%;
+    font-size: 1.7vw;
+    font-weight: 200;
+}
+#upperf .info p {
+    line-height: -2;
+}
+#upperf .info p span {
+    font-size: .95vw;
+    text-transform: uppercase;
+}
+#upperf .info a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 2.5% 4%;
+    line-height: 5;
+}
+
+#lowerf {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+#lowerf #bgvid video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+#lowerf h3 {
+    width: 42%;
+    font-size: 10vw;
+    font-weight: 300;
+    text-align: center;
+    line-height: .9;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    color: #fff;
+}
+#lowerf h3 button {
+    font-size: 8.3vw;
+    font-weight: 300;
+    background-color: transparent;
+    color: #fff;
+    border: 3px double #fff;
+    border-radius: 100px;
+    margin-top: 5%;
+    padding: 0 30px;
+    text-transform: uppercase;
+}
+#lowerf h3 button:hover {
+    background-color: #fff;
+    color: #000;
+    border: 3px double #000;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+}
+#lowerf #bgvid a {
+    position: absolute;
+    top: 86%;
+    left: 45%;
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 0% 2%;
+    line-height: 5;
+}
+
